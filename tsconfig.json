@@ -1,9 +1,12 @@
 {
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.test.ts"
+  ],
   "compilerOptions": {
-    // FIXME: Bun and typescript seems to have some configuration issues,
-    // types are emitted correctly but the build fails with a typescript error.
-    "noEmitOnError": false,
-    "strict": true
+    "target": "ESNext",
+    "strict": true,
   }
 }

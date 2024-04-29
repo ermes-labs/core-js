@@ -16,7 +16,7 @@
     "check-ci": "biome ci src/** *.*",
     "build": "bun run build:js && bun run build:types",
     "build:js": "bun run ./bun.build.ts",
-    "build:types": "tsc --declaration --emitDeclarationOnly --outDir ./dist ./src/index.ts",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir ./dist",
     "test": "bun run test",
     "coverage": "bun run test --coverage"
   },
@@ -34,7 +34,6 @@
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
-    "@types/bun": "^1.0.8",
     "typescript": "^5.3.3"
   }
 }
